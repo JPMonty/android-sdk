@@ -1,0 +1,7 @@
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ast_mob_sdk_float_menu_icon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ast_mob_sdk_float_icon"
+    android:contentDescription="@string/ast_mob_sdk_app_name" />

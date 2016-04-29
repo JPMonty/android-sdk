@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ast_mob_sdk_transparent_background">#00000000</color>
+    <color name="ast_mob_sdk_login_title_font_bg">#9FB6CD</color>
+    <color name="ast_mob_sdk_pay_left_side_font_color_s">#FFFFFF</color>
+    <color name="ast_mob_sdk_pay_left_side_font_color_d">#5c5c5c</color>
+    <color name="ast_mob_sdk_pay_left_side_bg_color">#F0F0F0</color>
+    <color name="ast_mob_sdk_pay_left_side_bg_s">#63B8FF</color>
+    <color name="ast_mob_sdk_pay_left_side_bg">#EEEEEE</color>
+    <color name="ast_mob_sdk_pay_record_main_font">#686967</color>
+    <color name="ast_mob_sdk_pay_links_feedback_red_color">#C33429</color>
+    <color name="ast_mob_sdk_reg_select_tabs_font_color">#D33529</color>
+    <color name="ast_mob_sdk_reg_unselect_tabs_font_color">#818385</color>
+    <color name="ast_mob_sdk_main_background_color">#F0EDEE</color>
+    <color name="ast_mob_sdk_font_red">#D51702</color>
+    <color name="ast_mob_sdk_white">#FFFFFF</color>
+    <color name="ast_mob_sdk_transparent">#00000000</color>
+    <color name="ast_mob_sdk_main_font_color">#ff0000</color>
+    <color name="ast_mob_sdk_list_font_color">#7F7E7D</color>
+    <color name="ast_mob_sdk_input_font_color">#A6A7A5</color>
+
+</resources>

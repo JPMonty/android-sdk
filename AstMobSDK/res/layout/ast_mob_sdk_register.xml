@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ast_mob_sdk_register_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ECECEC"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="11dp" >
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp" >
+
+        <ImageView
+            android:id="@+id/ast_mob_sdk_login_title_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ast_mob_sdk_title_icon" />
+
+        <ImageView
+            android:id="@+id/ast_back_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp" >
+
+        <EditText
+            android:id="@+id/ast_mob_sdk_register_username_et"
+            style="@style/ast_mob_sdk_input_font"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ast_mob_sdk_input_background"
+            android:hint="@string/ast_mob_sdk_reg_page_username_tips"
+            android:paddingLeft="45dip"
+            android:paddingRight="40dip"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ast_mob_sdk_register_username_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:contentDescription="@string/ast_mob_sdk_login_page_img_tips"
+            android:text="@string/ast_mob_sdk_login_input_user_name_tip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dip" >
+
+        <EditText
+            android:id="@+id/ast_mob_sdk_register_passwd_et"
+            style="@style/ast_mob_sdk_input_font"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ast_mob_sdk_input_background"
+            android:hint="@string/ast_mob_sdk_reg_page_password_tips"
+            android:inputType="textPassword"
+            android:paddingLeft="45dip"
+            android:paddingRight="40dip"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ast_mob_register_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:contentDescription="@string/ast_mob_sdk_login_page_img_tips"
+            android:text="@string/ast_mob_sdk_login_input_passwd_tip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dip" >
+
+        <EditText
+            android:id="@+id/ast_mob_sdk_register_passwd_et_again"
+            style="@style/ast_mob_sdk_input_font"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ast_mob_sdk_input_background"
+            android:hint="@string/ast_mob_sdk_reg_page_password_tips"
+            android:inputType="textPassword"
+            android:paddingLeft="45dip"
+            android:paddingRight="40dip"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ast_mob_register_tips_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:contentDescription="@string/ast_mob_sdk_login_page_img_tips"
+            android:text="@string/ast_mob_sdk_login_input_passwd_tip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line_forget_password"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp" >
+
+        <CheckBox
+            android:id="@+id/agree"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/text"
+            android:checked="true"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/text"
+            style="@style/ast_mob_sdk_login_main_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+             android:textSize="15dp" 
+            android:layout_toLeftOf="@+id/ysxy"
+            android:clickable="true"
+            android:text="同意"
+            android:textColor="#676767" />
+
+        <TextView
+            android:id="@+id/ysxy"
+            style="@style/ast_mob_sdk_login_main_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/ast_mob_sdk_transparent"
+            android:clickable="true"
+            android:text="隐私协议"
+            android:layout_centerVertical="true"
+               android:textSize="15dp"  />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line_regist_login"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp" >
+
+        <Button
+            android:id="@+id/ast_mob_sdk_next_step_btn"
+            style="@style/ast_mob_sdk_login_button_font"
+            android:layout_width="fill_parent"
+            android:layout_height="27dp"
+            android:background="#7C0000"
+            android:onClick="login"
+            android:text="@string/ast_mob_sdk_reg_btn_label" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="11dp" >
+
+        <TextView
+            android:id="@+id/nky"
+            style="@style/ast_mob_sdk_login_main_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/ast_mob_sdk_transparent"
+            android:clickable="true"
+            android:onClick="onClickRemeberPwd"
+            android:text="你可以选择"
+            android:textColor="#676767" />
+
+        <TextView
+            android:id="@+id/sjhzc"
+            style="@style/ast_mob_sdk_login_main_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/nky"
+            android:background="@color/ast_mob_sdk_transparent"
+            android:clickable="true"
+            android:onClick="onClickRemeberPwd"
+            android:text="手机号注册" />
+    </RelativeLayout>
+
+</LinearLayout>

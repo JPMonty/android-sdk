@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ast_mob_sdk_login_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ECECEC"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="11dp" >
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:gravity="left" >
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|top"
+            android:background="@drawable/btn_close_big" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="游客00654619" />
+
+        <ImageView
+            android:id="@+id/ast_mob_sdk_login_title_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ast_mob_sdk_title_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line_regist_login"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/ast_mob_sdk_safe_btn"
+            style="@style/ast_mob_sdk_login_button_font"
+            android:layout_width="fill_parent"
+            android:layout_height="27dp"
+            android:layout_marginTop="7dp"
+            android:background="#7C0000"
+            android:text="立即绑定" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="7dp" >
+
+        <Button
+            android:id="@+id/ast_mob_sdk_change_user_btn"
+            style="@style/ast_mob_sdk_login_button_font"
+            android:layout_width="fill_parent"
+            android:layout_height="27dp"
+            android:background="#7C0000"
+            android:text="切换账号" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_bg_shape"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/dropview_edit"
+        style="?android:attr/textViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:height="40dip" />
+
+    <ImageView
+        android:id="@+id/dropview_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="2dip"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/drop"
+        android:paddingRight="2dip"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

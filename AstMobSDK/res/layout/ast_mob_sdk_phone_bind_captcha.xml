@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ast_mob_sdk_register_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ECECEC"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="11dp" >
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="填写验证码"
+            android:textColor="#3A3C3B"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/ast_back_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="即将验证手机号:"
+                android:textColor="#6E6E6C"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:textColor="#6E6E6C"
+                android:textSize="10dp" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal" >
+
+        <EditText
+            android:id="@+id/ast_mob_sdk_phone_et"
+            style="@style/ast_mob_sdk_input_font"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ast_mob_sdk_input_background"
+            android:maxLength="6"
+            android:paddingLeft="55dip"
+            android:paddingRight="40dip"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/sendAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/ast_mob_sdk_phone_et"
+            android:text="60"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/ast_mob_sdk_register_username_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:contentDescription="@string/ast_mob_sdk_login_page_img_tips"
+            android:paddingLeft="5dp"
+            android:text="验证码:"
+            android:textColor="#797876" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line_regist_login"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp" >
+
+        <Button
+            android:id="@+id/ast_mob_sdk_next_step_btn"
+            style="@style/ast_mob_sdk_login_button_font"
+            android:layout_width="fill_parent"
+            android:layout_height="27dp"
+            android:layout_marginTop="7dp"
+            android:background="#7C0000"
+            android:onClick="login"
+            android:text="下一步" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="11dp" >
+
+        <CheckBox
+            android:id="@+id/agree"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:checked="true"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/ty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/agree"
+            android:background="@color/ast_mob_sdk_transparent"
+            android:clickable="true"
+            android:text="同意"
+             android:layout_centerVertical="true"
+            android:textSize="15dp"
+           />
+
+        <TextView
+            android:id="@+id/ysxy"
+            style="@style/ast_mob_sdk_login_main_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:layout_toRightOf="@id/ty"
+            android:background="@color/ast_mob_sdk_transparent"
+            android:clickable="true"
+            android:text="隐私协议"
+          />
+    </RelativeLayout>
+
+</LinearLayout>

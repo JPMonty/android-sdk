@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ast_mob_sdk_login_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ECECEC"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="11dp" >
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp" >
+
+        <ImageView
+            android:id="@+id/ast_mob_sdk_login_title_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ast_mob_sdk_title_icon" />
+
+        <ImageView
+            android:id="@+id/ast_back_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp" >
+
+        <EditText
+            android:id="@+id/ast_mob_sdk_login_username_et"
+            style="@style/ast_mob_sdk_input_font"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ast_mob_sdk_login_username_tips"
+            android:background="@drawable/ast_mob_sdk_input_background"
+            android:hint="@string/ast_mob_sdk_login_input_user_name_label"
+            android:paddingLeft="45dip"
+            android:paddingRight="40dip"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ast_mob_sdk_login_username_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:contentDescription="@string/ast_mob_sdk_login_page_img_tips"
+            android:text="@string/ast_mob_sdk_login_input_user_name_tip" />
+
+        <RelativeLayout
+            android:id="@+id/ast_mob_sdk_login_drop_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-30dip"
+            android:layout_toRightOf="@+id/ast_mob_sdk_login_username_et"
+            android:clickable="true"
+            android:focusable="true" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dip" >
+
+        <EditText
+            android:id="@+id/ast_mob_sdk_login_passwd_et"
+            style="@style/ast_mob_sdk_input_font"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ast_mob_sdk_input_background"
+            android:hint="@string/ast_mob_sdk_login_input_passwd_label"
+            android:inputType="textPassword"
+            android:paddingLeft="45dip"
+            android:paddingRight="40dip"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ast_mob_passsword_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:contentDescription="@string/ast_mob_sdk_login_page_img_tips"
+            android:text="@string/ast_mob_sdk_login_input_passwd_tip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line_forget_password"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line_regist_login"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp" >
+
+        <Button
+            android:id="@+id/ast_mob_sdk_login_btn"
+            style="@style/ast_mob_sdk_login_button_font"
+            android:layout_width="fill_parent"
+            android:layout_height="27dp"
+            android:background="#7C0000"
+            android:onClick="login"
+            android:text="登录并绑定" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="11dp" >
+    </RelativeLayout>
+
+</LinearLayout>

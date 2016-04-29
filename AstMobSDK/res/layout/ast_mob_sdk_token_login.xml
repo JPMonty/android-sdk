@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:drop="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ast_mob_sdk_login_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ECECEC"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="11dp" >
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/ast_mob_sdk_login_title_icon"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ast_mob_sdk_title_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="260dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp" >
+
+        <!-- <AutoCompleteTextView -->
+        <!-- android:id="@+id/ast_mob_sdk_login_username_et" -->
+        <!-- style="@style/ast_mob_sdk_input_font" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="fill_parent" -->
+        <!-- android:layout_alignParentLeft="true" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_toRightOf="@+id/ast_mob_sdk_login_username_tips" -->
+        <!-- android:background="@drawable/ast_mob_sdk_input_background" -->
+        <!-- android:hint="@string/ast_mob_sdk_login_input_user_name_label" -->
+        <!-- android:paddingLeft="45dip" -->
+        <!-- android:paddingRight="40dip" -->
+        <!-- android:singleLine="true" -->
+        <!-- android:textSize="12sp" /> -->
+
+        <EditText
+            android:id="@+id/ast_mob_sdk_login_username_et"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/ast_mob_sdk_input_background"
+            android:clickable="true"
+            android:editable="false"
+            android:focusable="true"
+            android:paddingLeft="3dp"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/btn_select"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/pull_down" />
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/ast_mob_sdk_login_username_tips" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginLeft="4dp" -->
+        <!-- android:contentDescription="@string/ast_mob_sdk_login_page_img_tips" -->
+        <!-- android:text="@string/ast_mob_sdk_login_input_user_name_tip" -->
+        <!-- android:textColor="#757575" /> -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line_forget_password"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp" >
+
+        <CheckBox
+            android:id="@+id/rememberme"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/rememberMe_wz"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/rememberMe_wz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="下次自动登录"
+            android:textColor="#757575"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+             />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line_regist_login"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp" >
+
+        <Button
+            android:id="@+id/ast_mob_sdk_next_step_btn"
+            style="@style/ast_mob_sdk_login_button_font"
+            android:layout_width="fill_parent"
+            android:layout_height="27dp"
+            android:background="#7C0000"
+            android:onClick="login"
+            android:text="登录" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="11dp" >
+
+        <TextView
+            android:id="@+id/other_account"
+            style="@style/ast_mob_sdk_login_main_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/ast_mob_sdk_transparent"
+            android:clickable="true"
+            android:onClick="register"
+            android:text="其他账号" />
+    </RelativeLayout>
+
+</LinearLayout>
